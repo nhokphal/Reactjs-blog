@@ -7,6 +7,7 @@ import About from './About'
 import Sidebar from '../Components/Sidebar'
 import Person from './Person'
 import Props from './Props'
+import State from './State'
 
 
 const Container = styled.div`
@@ -34,6 +35,8 @@ const Pages = () => {
             <Route index element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/props' element={<Props/>}/>
+            <Route path='/state' element={<State/>}/>
+
         </Routes>
         </Wrapper>
 
