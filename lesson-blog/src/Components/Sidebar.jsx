@@ -24,7 +24,9 @@ const Sidebar = () => {
       <Wrapper>
       <NavLink to="/state">Stateless vs statfull</NavLink>
       </Wrapper>
-
+      <Wrapper>
+      <NavLink to="/redux">Redux</NavLink>
+      </Wrapper>
     </Container>
   )
 }

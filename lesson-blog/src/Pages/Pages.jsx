@@ -8,6 +8,7 @@ import Sidebar from '../Components/Sidebar'
 import Person from './Person'
 import Props from './Props'
 import State from './State'
+import Redux from './Redux'
 
 
 const Container = styled.div`
@@ -36,7 +37,7 @@ const Pages = () => {
             <Route path='/about' element={<About/>}/>
             <Route path='/props' element={<Props/>}/>
             <Route path='/state' element={<State/>}/>
-
+            <Route path='/redux' element={<Redux/>}/>
         </Routes>
         </Wrapper>
 

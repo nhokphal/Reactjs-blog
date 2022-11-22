@@ -8,6 +8,10 @@ import Pages from './Pages/Pages';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Sidebar from './Components/Sidebar';
+import { createStore } from 'redux';
+
+
+const store = createStore();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

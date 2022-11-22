@@ -26,14 +26,15 @@ const Props = (props) => {
     return setShowPage(true)
   }
   useEffect(() =>{
-    handleClick()
     return setShowPage(false)
-  },[] )
+  },[])
 
-  return (
+  let listname = null;
+  if(showpage)
+  {
+
+     listname = (
     <div>
-    <button onClick={handleClick}>Show page</button>
-    { showpage ? <div>
       <h1>Welcome to react</h1>
         <h1>simple props</h1>
       <Person name="phal" age={Math.floor(Math.random() * 30)}/>
@@ -43,7 +44,13 @@ const Props = (props) => {
       <h1> access props by children</h1>
       <Person name= "phal" age={Math.floor(Math.random() * 20)}>i am Children props</Person>
       <button onClick={SwitchHandler}>Switch me</button>
-    </div> : false }
+    </div>  
+  )
+}
+  return (
+    <div>
+    <button onClick={handleClick}>Show page</button>
+    { listname }
     </div>
   )
 }
